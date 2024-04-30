@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Retention Strategy APP</title>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "app.js"><</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Enter Customer Details</h2>
+            <form class = "form"> 
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="seniorcitizen">Senior Citizen</label>
+                    <select id="seniorcitizen" name="seniorcitizen">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="partner">Partner</label>
+                    <select id="partner" name="partner">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dependents">Dependents</label>
+                    <select id="dependents" name="dependents">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phoneservice">Phone Service</label>
+                    <select id="phoneservice" name="phoneservice">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="multiplelines">Multiple Lines</label>
+                    <select id="multiplelines" name="multiplelines">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        <option value="no_phone_service">No Phone Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="internetservice">Internet Service</label>
+                    <select id="internetservice" name="internetservice">
+                        <option value="dsl">DSL</option>
+                        <option value="fiber_optic">Fiber Optic</option>
+                        <option value="no">NO</option>                   
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="online_security">Online Security</label>
+                    <select id="onlinesecurity" name="onlinesercurity">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        <option value="no_internet_service">No Internet Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="online_backup">Online Backup</label>
+                    <select id="onlinebackup" name="onlinebackup">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        <option value="no_internet_service">No Internet Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="device_support">Device Protection</label>
+                    <select id="deviceprotection" name="deviceproetction">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        <option value="no_internet_service">No Internet Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tech_support">Tech Support</label>
+                    <select id="etchsupport" name="techsupport">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        <option value="no_internet_service">No Internet Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="streamingtv">Streaming TV</label>
+                    <select id="streamingtv" name="streamingtv">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        <option value="no_internet_service">No Internet Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="streamingmovies">Streaming Movies</label>
+                    <select id="streamingmovies" name="streamingmovies">
+                        <option value="no">No</option>
+                        <option value="yes">Yes</option>
+                        <option value="no_internet_service">No Internet Service</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contract">Contract</label>
+                    <select id="contract" name="contract">
+                        <option value="month-to-month">Monthly</option>
+                        <option value="one_year">Yearly</option>
+                        <option value="two_year">Biannually</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="paperlessbilling">Paperless Billing</label>
+                    <select id="paperlessbilling" name="paperlessbilling">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="paymentmethod">Payment Method</label>
+                    <select id="paymentmethod" name="paymentmethod">
+                        <option value="electronic_check">electronic check</option>
+                        <option value="bank_transfer_(automatic)">Bank Transfer</option>
+                        <option value="mailed_check">Mailed Check</option>
+                        <option value="credit_card_(automatic)">Automatic</option>
+                        
+
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tenure">Tenure</label>
+                    <input type="number" id="tenure" name="tenure" placeholder="What is the tenure   " min="1" required>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="monthlycharges">Monthly Charges</label>
+                    <input type="number" id="monthlycharges" name="monthlycharges" placeholder="Enter the montly chargs charges" min="0.01" step="0.01" required >
+                </div>
+                
+                <div class="form-group">
+                    <label for="totalcharges">Total Charges</label>
+                    <input type="number" id="totalcharges" name="totalcharges" placeholder="Enter the totoal charges" min="1" required >
+                </div>
+
+                <button class = "submit" onclick ="onClickedPredictChurn()" type="button">Predict Churn</button>
+            </form>
+
+             
+        </div>
+        <div class="message-container">
+            <h4>Improve your customer retention strategy with our solution</h4>
+        </div>
+    </div>
+</body>
+</html>
